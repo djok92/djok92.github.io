@@ -1,0 +1,50 @@
+#contact {
+  padding: 2rem;
+  @include flex-center;
+  flex-direction: column;
+
+  @include breakpoint(_1024) {
+    @include section-padding-md;
+  }
+
+  .contact__methods {
+    li {
+      font-size: 1.5rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: .8rem;
+      }
+
+      .fas,
+      .fas {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  .contact__icons {
+
+    .fab,
+    .far {
+      @include link-colors;
+      font-size: 2rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  .contact__download {
+    margin: 1rem 0;
+    text-align: left;
+
+    a {
+      @include link-colors;
+      font-size: 1.5rem;
+
+      .far {
+        font-size: 2rem;
+        margin-left: 1.2rem;
+      }
+    }
+
+  }
+}

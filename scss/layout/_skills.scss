@@ -1,0 +1,14 @@
+#skills {
+  @include section-padding;
+  @include section-clip-secondary;
+
+  @include breakpoint(_1024) {
+    clip-path: initial;
+    @include section-padding-md
+  }
+
+  @include breakpoint(_768) {
+    @include section-padding-sm;
+    clip-path: initial;
+  }
+}

@@ -1,0 +1,37 @@
+.navbar {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem 3rem;
+
+  @include breakpoint(_768) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1.5rem;
+  }
+
+  &__item {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+
+    a {
+      color: $primary-color;
+
+      @include breakpoint(min_1200) {
+        @include link-colors;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        @include breakpoint(min_1200) {
+          border: 1px solid $primary-color;
+          padding: 1rem 3rem;
+        }
+      }
+    }
+  }
+}

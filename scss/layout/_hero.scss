@@ -1,0 +1,54 @@
+.hero {
+  height: 100vh;
+  background-image: $bg-image;
+  background-size: cover;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba($color: #444, $alpha: 0.4)
+  }
+}
+
+.typewriter-container {
+  font-family: $primary-font;
+  text-transform: capitalize;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  height: calc(100% - 125px);
+
+  @include breakpoint(_768) {
+    height: calc(100% - 190px);
+    padding-left: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint(_550) {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+
+    @include breakpoint(_550) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .txt-type {
+    .txt {
+      border-right: 0.2rem solid #777;
+    }
+  }
+}

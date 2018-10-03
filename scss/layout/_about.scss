@@ -1,0 +1,47 @@
+#about {
+  @include section-padding;
+  @include section-clip-primary;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @include breakpoint(_1024) {
+    align-items: center;
+    clip-path: initial;
+    @include section-padding-md;
+  }
+
+  @include breakpoint(_768) {
+    @include section-padding-sm;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__img-holder {
+    flex-basis: 30%;
+    text-align: center;
+
+    @include breakpoint(_768) {
+      flex-basis: 100%;
+    }
+
+    img {
+      height: 12.5rem;
+      width: 12.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: .2rem solid $primary-color;
+    }
+  }
+
+  .about__text {
+    flex-basis: 70%;
+    @include section-text;
+
+    @include breakpoint(_768) {
+      padding: 0;
+      margin: 0;
+      flex-basis: 100%;
+    }
+  }
+}

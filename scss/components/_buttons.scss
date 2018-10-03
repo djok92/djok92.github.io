@@ -1,0 +1,78 @@
+.btn {
+  padding: 1rem 1.5rem;
+  border: 0;
+  color: $primary-color;
+  transition: all .4s;
+
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.btn--dark {
+  @extend .btn;
+  background: darken($background-color, 50);
+  font-size: 1.2rem;
+
+  @include breakpoint(_550) {
+    padding: .8rem .8rem;
+    text-align: center;
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.btn-scroll-top {
+  padding: 1.3rem 1.5rem;
+  color: $primary-color;
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: $primary-color;
+  background: $background-color;
+  width: 100%;
+  border: 1px solid $primary-color;
+  font-size: 1.5rem;
+  text-align: left;
+  cursor: pointer;
+
+  &:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f067";
+  }
+
+  &.active:after {
+    content: "\f068";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+}

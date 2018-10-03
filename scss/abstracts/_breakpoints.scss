@@ -1,0 +1,121 @@
+@mixin breakpoint($point) {
+  @if $point==_1919 {
+    @media (max-width: 1919px) {
+      @content;
+    }
+  }
+
+  @if $point==_1366 {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
+
+  @if $point==_1200 {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $point==min_1200 {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $point==_1200_991 {
+    @media (max-width: 1200px) and (min-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $point==_1024 {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $point==_1300 {
+    @media (max-width: 1300px) {
+      @content;
+    }
+  }
+
+  @else if $point==_991 {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $point==_990 {
+    @media (max-width: 990px) {
+      @content;
+    }
+  }
+
+  @else if $point==_800 {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+
+  @else if $point==_768 {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point==_766 {
+    @media (max-width: 766px) {
+      @content;
+    }
+  }
+
+  @else if $point==_680 {
+    @media (max-width: 680px) {
+      @content;
+    }
+  }
+
+  @else if $point==_600 {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @else if $point==_550 {
+    @media (max-width: 550px) {
+      @content;
+    }
+  }
+
+  @else if $point==_480 {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @else if $point==_479 {
+    @media (max-width: 479px) {
+      @content;
+    }
+  }
+
+  @else if $point==_400 {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+
+  @else if $point==_360 {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+
+  @else if $point==_359 {
+    @media (max-width: 359px) {
+      @content;
+    }
+  }
+}

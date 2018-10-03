@@ -1,0 +1,61 @@
+#my-work {
+  @include section-padding;
+
+  @include breakpoint(_1024) {
+    @include section-padding-md;
+  }
+
+  @include breakpoint(_768) {
+    @include section-padding-sm;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(_1200) {
+      flex-wrap: wrap;
+    }
+
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 1.2rem;
+      flex-basis: 25%;
+
+      @include breakpoint(_1200) {
+        flex-basis: 48%;
+        margin: .8rem 0;
+      }
+
+      @include breakpoint(_768) {
+        flex-basis: 100%;
+        margin: .8rem 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        border: 3px solid $primary-color;
+        transition: all .4s;
+        max-height: 250px;
+
+        &:hover {
+          opacity: .5;
+          border-color: $secondary-color
+        }
+      }
+
+      .fab {
+        margin-right: .3rem;
+      }
+    }
+  }
+}

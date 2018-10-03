@@ -1,0 +1,44 @@
+@mixin section-padding {
+  padding: 5rem 4rem;
+}
+
+@mixin section-padding-md {
+  padding: 2.5rem 2rem
+}
+
+@mixin section-padding-sm {
+  padding: 2rem 1.5rem;
+}
+
+@mixin section-text {
+  font-size: 1.2rem;
+  padding: 1rem;
+  letter-spacing: 1.6px;
+  line-height: 1.6;
+  margin-right: 1.5rem;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin section-clip-primary {
+  background: rgba($secondary-color, .8);
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+}
+
+@mixin section-clip-secondary {
+  background: rgba($secondary-color, .8);
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+}
+
+@mixin link-colors {
+  color: $primary-color;
+  transition: color .4s;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
