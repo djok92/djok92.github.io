@@ -23,7 +23,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-right: 1.2rem;
+      margin-right: 1.6rem;
       flex-basis: 25%;
 
       @include breakpoint(_1200) {
@@ -43,13 +43,19 @@
       img {
         display: block;
         width: 100%;
-        border: 3px solid $primary-color;
-        transition: all .4s;
+        border: 2px solid $primary-color;
+        transition: all .3s;
         max-height: 250px;
+        opacity: .8;
+        z-index: 10;
 
         &:hover {
-          opacity: .5;
-          border-color: $secondary-color
+          @include breakpoint(min_1200) {
+            opacity: 1;
+            border-color: $secondary-color;
+            transform: scale(1.2);
+            z-index: 100;
+          }
         }
       }
 

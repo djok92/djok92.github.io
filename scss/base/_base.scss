@@ -31,14 +31,14 @@ a {
 }
 
 .section-heading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.8rem;
   text-align: center;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: normal;
 
   @include breakpoint(_550) {
     margin-bottom: 1rem;
-    font-weight: normal;
+    text-align: left;
   }
 }
