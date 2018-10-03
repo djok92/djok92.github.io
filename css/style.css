@@ -219,6 +219,7 @@ a {
 
 .accordion {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap; }
   @media (max-width: 550px) {
     .accordion {
@@ -357,10 +358,7 @@ a {
         flex-basis: 100%; } }
 
 #my-work {
-  padding: 5rem 4rem; }
-  @media (max-width: 1024px) {
-    #my-work {
-      padding: 2.5rem 2rem; } }
+  padding: 2.5rem 2rem; }
   @media (max-width: 768px) {
     #my-work {
       padding: 2rem 1.5rem; } }

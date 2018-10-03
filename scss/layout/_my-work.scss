@@ -1,9 +1,5 @@
 #my-work {
-  @include section-padding;
-
-  @include breakpoint(_1024) {
-    @include section-padding-md;
-  }
+  @include section-padding-md;
 
   @include breakpoint(_768) {
     @include section-padding-sm;
