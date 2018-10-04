@@ -12,8 +12,8 @@
     margin: 1rem 1rem;
 
     @include breakpoint(_1200) {
-      margin: .8rem 0;
-      flex-basis: 49%;
+      margin: 1rem .6rem;
+      flex-basis: 47%;
     }
 
     @include breakpoint(_680) {
