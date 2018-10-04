@@ -96,14 +96,14 @@ function accordion() {
       let setClasses = !this.classList.contains('active');
       setClass(acc, 'active', 'remove');
       setClass(panel, 'show', 'remove');
-      this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+
 
       if (setClasses) {
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("show");
         this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
       } else {
-        this.nextElementSibling.style.maxHeight = null;
+        this.nextElementSibling.style.maxHeight = 0;
       }
     }
   }

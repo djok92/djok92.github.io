@@ -198,12 +198,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.5rem;
   color: #fff;
   background: #444;
   width: 100%;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   font-size: 1.5rem;
+  border-radius: 500px;
   text-align: left;
   cursor: pointer; }
   .accordion__button:after {
@@ -237,12 +238,15 @@ a {
         flex-basis: 100%; } }
   .accordion__content {
     color: #444;
-    background-color: #fff;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-out; }
     .accordion__content p {
-      padding: 1rem 1rem; }
+      padding: 1.2rem 1rem;
+      font-size: 1.2rem;
+      border-bottom: 2px dashed #444;
+      text-align: center;
+      border-radius: 500px; }
 
 .accordion__content {
   height: 0; }

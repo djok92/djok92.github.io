@@ -24,14 +24,17 @@
 
   &__content {
     color: $background-color;
-    background-color: $primary-color;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-out;
 
 
     p {
-      padding: 1rem 1rem;
+      padding: 1.2rem 1rem;
+      font-size: 1.2rem;
+      border-bottom: 2px dashed $background-color;
+      text-align: center;
+      border-radius: 500px;
     }
   }
 }
