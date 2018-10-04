@@ -130,7 +130,7 @@ table {
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Raleway", sans-serif;
   color: #fff;
   scroll-behavior: smooth; }
@@ -240,7 +240,7 @@ a {
     background-color: #fff;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .accordion__content p {
       padding: 1rem 1rem; }
 
