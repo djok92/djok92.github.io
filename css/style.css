@@ -242,8 +242,8 @@ a {
     overflow: hidden;
     transition: all 0.3s ease-out; }
     .accordion__content p {
-      padding: 1.2rem 1rem;
-      font-size: 1.2rem;
+      padding: 1.1rem 1rem;
+      font-size: 1.1rem;
       border-bottom: 2px dashed #444;
       text-align: center;
       border-radius: 500px; }
