@@ -240,9 +240,15 @@ a {
     background-color: #fff;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out; }
+    transition: all 0.5s ease-out; }
     .accordion__content p {
       padding: 1rem 1rem; }
+
+.accordion__content {
+  height: 0; }
+
+.accordion__content.show {
+  height: 200px; }
 
 .navbar {
   text-transform: uppercase;

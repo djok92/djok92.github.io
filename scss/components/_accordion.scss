@@ -27,12 +27,19 @@
     background-color: $primary-color;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: all 0.5s ease-out;
 
 
     p {
       padding: 1rem 1rem;
     }
   }
+}
 
+.accordion__content {
+  height: 0;
+}
+
+.accordion__content.show {
+  height: 200px;
 }

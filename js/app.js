@@ -80,20 +80,33 @@ function scrollTop() {
 
 window.onscroll = scrollTop;
 
-//Accordion
-function accordionSetup() {
-  const accordionItems = document.querySelectorAll(".accordion__button");
-  accordionItems.forEach(item => {
-    item.addEventListener("click", function () {
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  });
+function setClass(els, className, fnName) {
+  for (let i = 0; i < els.length; i++) {
+    els[i].classList[fnName](className);
+
+  }
 }
 
-accordionSetup();
+function accordion() {
+  const acc = document.getElementsByClassName("accordion__button");
+  const panel = document.getElementsByClassName('accordion__content');
+
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].onclick = function () {
+      let setClasses = !this.classList.contains('active');
+      setClass(acc, 'active', 'remove');
+      setClass(panel, 'show', 'remove');
+      this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+
+      if (setClasses) {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+      } else {
+        this.nextElementSibling.style.maxHeight = null;
+      }
+    }
+  }
+}
+
+accordion();
