@@ -27,7 +27,7 @@
         margin: .8rem 0;
       }
 
-      @include breakpoint(_768) {
+      @include breakpoint(_550) {
         flex-basis: 100%;
         margin: 1rem 0;
       }

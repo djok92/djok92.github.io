@@ -379,7 +379,7 @@ a {
         #my-work .projects__item {
           flex-basis: 48%;
           margin: .8rem 0; } }
-      @media (max-width: 768px) {
+      @media (max-width: 550px) {
         #my-work .projects__item {
           flex-basis: 100%;
           margin: 1rem 0; } }
@@ -409,7 +409,7 @@ a {
   @media (max-width: 1024px) {
     #skills {
       clip-path: initial;
-      padding: 3rem 2.5rem; } }
+      padding: 2rem 1.5rem; } }
   @media (max-width: 768px) {
     #skills {
       clip-path: initial; } }

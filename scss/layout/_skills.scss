@@ -4,7 +4,7 @@
 
   @include breakpoint(_1024) {
     clip-path: initial;
-    @include section-padding-md
+    @include section-padding-sm
   }
 
   @include breakpoint(_768) {
