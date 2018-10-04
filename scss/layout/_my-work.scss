@@ -2,7 +2,7 @@
   @include section-padding-md;
 
   @include breakpoint(_768) {
-    @include section-padding-sm;
+    @include section-padding-md;
   }
 
   .projects {
@@ -29,7 +29,7 @@
 
       @include breakpoint(_768) {
         flex-basis: 100%;
-        margin: .8rem 0;
+        margin: 1rem 0;
       }
 
       &:last-of-type {
@@ -40,7 +40,7 @@
         display: block;
         width: 100%;
         border: 2px solid $primary-color;
-        transition: all .3s;
+        transition: all .4s;
         max-height: 250px;
         opacity: .8;
         z-index: 10;
@@ -49,7 +49,7 @@
           @include breakpoint(min_1200) {
             opacity: 1;
             border-color: $secondary-color;
-            transform: scale(1.2);
+            transform: scale(1.1);
             z-index: 100;
           }
         }

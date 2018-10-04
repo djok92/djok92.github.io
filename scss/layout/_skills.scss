@@ -8,7 +8,6 @@
   }
 
   @include breakpoint(_768) {
-    @include section-padding-sm;
     clip-path: initial;
   }
 }

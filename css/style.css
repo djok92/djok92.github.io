@@ -320,16 +320,16 @@ a {
   background: rgba(238, 206, 26, 0.8);
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
   display: flex;
-  justify-content: center;
-  align-items: flex-end; }
+  align-items: center;
+  justify-content: center; }
   @media (max-width: 1024px) {
     #about {
       align-items: center;
       clip-path: initial;
-      padding: 2.5rem 2rem; } }
+      padding: 3rem 2.5rem; } }
   @media (max-width: 768px) {
     #about {
-      padding: 2rem 1.5rem;
+      padding: 3rem 2.5rem;
       flex-direction: column;
       align-items: center; } }
   #about .about__img-holder {
@@ -337,13 +337,13 @@ a {
     text-align: center; }
     @media (max-width: 768px) {
       #about .about__img-holder {
-        flex-basis: 100%; } }
+        flex-basis: 100%;
+        margin-bottom: 1.5rem; } }
     #about .about__img-holder img {
-      height: 12.5rem;
-      width: 12.5rem;
+      height: 20rem;
+      width: 15rem;
       object-fit: cover;
-      border-radius: 50%;
-      border: 0.2rem solid #fff; }
+      border: 2px solid #fff; }
   #about .about__text {
     flex-basis: 70%;
     font-size: 1.2rem;
@@ -358,10 +358,10 @@ a {
         flex-basis: 100%; } }
 
 #my-work {
-  padding: 2.5rem 2rem; }
+  padding: 3rem 2.5rem; }
   @media (max-width: 768px) {
     #my-work {
-      padding: 2rem 1.5rem; } }
+      padding: 3rem 2.5rem; } }
   #my-work .projects {
     display: flex;
     align-items: center;
@@ -382,14 +382,14 @@ a {
       @media (max-width: 768px) {
         #my-work .projects__item {
           flex-basis: 100%;
-          margin: .8rem 0; } }
+          margin: 1rem 0; } }
       #my-work .projects__item:last-of-type {
         margin-right: 0; }
       #my-work .projects__item img {
         display: block;
         width: 100%;
         border: 2px solid #fff;
-        transition: all .3s;
+        transition: all .4s;
         max-height: 250px;
         opacity: .8;
         z-index: 10; }
@@ -397,7 +397,7 @@ a {
           #my-work .projects__item img:hover {
             opacity: 1;
             border-color: #eece1a;
-            transform: scale(1.2);
+            transform: scale(1.1);
             z-index: 100; } }
       #my-work .projects__item .fab {
         margin-right: .3rem; }
@@ -409,10 +409,9 @@ a {
   @media (max-width: 1024px) {
     #skills {
       clip-path: initial;
-      padding: 2.5rem 2rem; } }
+      padding: 3rem 2.5rem; } }
   @media (max-width: 768px) {
     #skills {
-      padding: 2rem 1.5rem;
       clip-path: initial; } }
 
 #contact {
@@ -423,7 +422,7 @@ a {
   flex-direction: column; }
   @media (max-width: 1024px) {
     #contact {
-      padding: 2.5rem 2rem; } }
+      padding: 3rem 2.5rem; } }
   #contact .contact__methods li {
     font-size: 1.5rem; }
     #contact .contact__methods li:not(:last-of-type) {
