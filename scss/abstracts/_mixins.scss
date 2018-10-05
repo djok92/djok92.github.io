@@ -3,7 +3,7 @@
 }
 
 @mixin section-padding-md {
-  padding: 3rem 2rem
+  padding: 3rem 2rem;
 }
 
 @mixin section-padding-sm {
@@ -25,18 +25,18 @@
 }
 
 @mixin section-clip-primary {
-  background: rgba($secondary-color, .8);
+  background: $secondary-color;
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 }
 
 @mixin section-clip-secondary {
-  background: rgba($secondary-color, .8);
+  background: $secondary-color;
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
 }
 
 @mixin link-colors {
   color: $primary-color;
-  transition: color .4s;
+  transition: color 0.4s;
 
   &:hover {
     color: $secondary-color;

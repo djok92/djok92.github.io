@@ -166,7 +166,7 @@ a {
   color: #fff;
   transition: all .4s; }
   .btn:hover, .btn--dark:hover {
-    background: #eece1a;
+    background: rgba(255, 190, 0, 0.9);
     color: #fff; }
 
 .btn--dark {
@@ -269,7 +269,7 @@ a {
       padding: 1.5rem; } }
   .navbar__item {
     margin: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 1.5rem; }
     .navbar__item a {
@@ -277,10 +277,10 @@ a {
       @media (min-width: 1200px) {
         .navbar__item a {
           color: #fff;
-          transition: color .4s;
+          transition: color 0.4s;
           transition: all 0.4s; }
           .navbar__item a:hover {
-            color: #eece1a; } }
+            color: rgba(255, 190, 0, 0.9); } }
       @media (min-width: 1200px) {
         .navbar__item a:hover {
           border: 1px solid #fff;
@@ -324,11 +324,12 @@ a {
       .typewriter-container h2 {
         font-size: 1.8rem; } }
   .typewriter-container .txt-type .txt {
-    border-right: 0.2rem solid #777; }
+    border-right: 0.2rem solid #777;
+    color: rgba(255, 190, 0, 0.9); }
 
 #about {
   padding: 5rem 4rem;
-  background: rgba(238, 206, 26, 0.8);
+  background: rgba(255, 190, 0, 0.9);
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
   display: flex;
   align-items: center;
@@ -407,7 +408,7 @@ a {
         @media (min-width: 1200px) {
           #my-work .projects__item img:hover {
             opacity: 1;
-            border-color: #eece1a;
+            border-color: rgba(255, 190, 0, 0.9);
             transform: scale(1.1);
             z-index: 100; } }
       #my-work .projects__item .fab {
@@ -415,7 +416,7 @@ a {
 
 #skills {
   padding: 5rem 4rem;
-  background: rgba(238, 206, 26, 0.8);
+  background: rgba(255, 190, 0, 0.9);
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%); }
   @media (max-width: 1024px) {
     #skills {
@@ -444,21 +445,21 @@ a {
   #contact .contact__icons .fab,
   #contact .contact__icons .far {
     color: #fff;
-    transition: color .4s;
+    transition: color 0.4s;
     font-size: 2rem;
     margin-right: 1.2rem; }
     #contact .contact__icons .fab:hover,
     #contact .contact__icons .far:hover {
-      color: #eece1a; }
+      color: rgba(255, 190, 0, 0.9); }
   #contact .contact__download {
     margin: 1rem 0;
     text-align: left; }
     #contact .contact__download a {
       color: #fff;
-      transition: color .4s;
+      transition: color 0.4s;
       font-size: 1.5rem; }
       #contact .contact__download a:hover {
-        color: #eece1a; }
+        color: rgba(255, 190, 0, 0.9); }
       #contact .contact__download a .far {
         font-size: 2rem;
         margin-left: 1.2rem; }
