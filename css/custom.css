@@ -164,7 +164,8 @@ a {
   padding: 1rem 1.5rem;
   border: 0;
   color: #fff;
-  transition: all .4s; }
+  transition: all .4s;
+  z-index: 10; }
   .btn:hover, .btn--dark:hover {
     background: rgba(255, 190, 0, 0.9);
     color: #fff; }
@@ -281,10 +282,6 @@ a {
           transition: all 0.4s; }
           .navbar__item a:hover {
             color: rgba(255, 190, 0, 0.9); } }
-      @media (min-width: 1200px) {
-        .navbar__item a:hover {
-          border: 1px solid #fff;
-          padding: 1rem 3rem; } }
 
 .hero {
   height: 100vh;
@@ -386,7 +383,8 @@ a {
       flex-direction: column;
       justify-content: center;
       margin-right: 1.6rem;
-      flex-basis: 25%; }
+      flex-basis: 25%;
+      overflow: hidden; }
       @media (max-width: 1200px) {
         #my-work .projects__item {
           flex-basis: 48%;
@@ -400,17 +398,14 @@ a {
       #my-work .projects__item img {
         display: block;
         width: 100%;
-        border: 2px solid #fff;
         transition: all .4s;
         max-height: 250px;
-        opacity: .8;
-        z-index: 10; }
+        opacity: .8; }
         @media (min-width: 1200px) {
           #my-work .projects__item img:hover {
             opacity: 1;
             border-color: rgba(255, 190, 0, 0.9);
-            transform: scale(1.1);
-            z-index: 100; } }
+            transform: scale(1.1); } }
       #my-work .projects__item .fab {
         margin-right: .3rem; }
 

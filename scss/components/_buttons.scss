@@ -3,6 +3,7 @@
   border: 0;
   color: $primary-color;
   transition: all .4s;
+  z-index: 10;
 
   &:hover {
     background: $secondary-color;

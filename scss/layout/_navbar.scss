@@ -26,12 +26,6 @@
         transition: all 0.4s;
       }
 
-      &:hover {
-        @include breakpoint(min_1200) {
-          border: 1px solid $primary-color;
-          padding: 1rem 3rem;
-        }
-      }
     }
   }
 }
