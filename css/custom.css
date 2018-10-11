@@ -437,6 +437,13 @@ a {
     #contact .contact__methods li .fas,
     #contact .contact__methods li .fas {
       margin-right: 1.2rem; }
+      #contact .contact__methods li .fas a,
+      #contact .contact__methods li .fas a {
+        color: #fff;
+        transition: color 0.4s; }
+        #contact .contact__methods li .fas a:hover,
+        #contact .contact__methods li .fas a:hover {
+          color: rgba(255, 190, 0, 0.9); }
   #contact .contact__icons .fab,
   #contact .contact__icons .far {
     color: #fff;

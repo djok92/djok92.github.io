@@ -62,7 +62,7 @@ function init() {
 }
 
 //Scroll to top
-function scrollTop() {
+window.onscroll = function () {
   const btn = document.querySelector(".btn-scroll-top");
   if (
     (document.body.scrollTop > 160 ||
@@ -78,7 +78,6 @@ function scrollTop() {
   }
 }
 
-window.onscroll = scrollTop;
 
 function setClass(els, className, fnName) {
   for (let i = 0; i < els.length; i++) {
