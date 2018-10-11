@@ -15,12 +15,14 @@
         margin-bottom: .8rem;
       }
 
+      .phone,
+      .email {
+     @include link-colors;
+   }
+
       .fas,
       .fas {
         margin-right: 1.2rem;
-        a {
-          @include link-colors;
-        }
       }
     }
   }
