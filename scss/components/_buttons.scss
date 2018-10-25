@@ -4,6 +4,11 @@
   color: $primary-color;
   transition: all .4s;
   z-index: 10;
+  text-align: center;
+
+  @include breakpoint(_550) {
+    text-align: left;
+  }
 
   &:hover {
     background: $secondary-color;
@@ -37,7 +42,6 @@
   right: 1rem;
   z-index: 99;
   cursor: pointer;
-  display: none;
 
   &:focus,
   &:active {
@@ -49,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1.2rem;
   color: $primary-color;
   background: $background-color;
   width: 100%;
