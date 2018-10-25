@@ -1,6 +1,7 @@
 //Loader
 setTimeout(function () {
-  $(".loader").fadeOut(500)
+  $(".loader").fadeOut(500);
+  $(".btn-scroll-top").fadeOut(200);
 }, 5000);
 
 
